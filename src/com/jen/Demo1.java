@@ -26,6 +26,8 @@ public class Demo1 {
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//li[@id='menu_download']")).click();
 		System.out.println(driver.getTitle());
+		driver.findElement(By.xpath("//a[.='Previous Releases']")).click();
+		System.out.println(driver.getTitle());
 	}
 	@AfterMethod
 	public void tearDown() {
