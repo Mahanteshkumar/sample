@@ -22,11 +22,11 @@ public class Demo1 {
 		driver.get("https://www.seleniumhq.org/");
 	}
 	@Test
-	public void testcase1() {
+	public void testcase1(){
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//li[@id='menu_download']")).click();
 		System.out.println(driver.getTitle());
-		driver.findElement(By.xpath("//a[.='Previous Releases']")).click();
+		driver.findElement(By.xpath("//a[.='Projects']")).click();
 		System.out.println(driver.getTitle());
 	}
 	@AfterMethod
