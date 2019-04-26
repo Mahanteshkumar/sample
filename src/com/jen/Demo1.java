@@ -16,6 +16,7 @@ public class Demo1 extends BaseTest{
 		System.out.println(driver.getTitle());
 		driver.findElement(By.id("q")).sendKeys("chrome");
 		driver.findElement(By.id("submit"));
+		Thread.sleep(2000);
 		
 	}
 }
